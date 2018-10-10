@@ -1,0 +1,14 @@
+<app-layout>
+    <h2>Event Emitter(pass data between siblings)</h2>
+    <hr>
+    <h3>RSVP</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <app-events (eventClicked)="childEventClicked($event)"></app-events>
+        </div>
+        <div class="col-lg-6">
+            <app-event-details [event]="clickedEvent"></app-event-details>
+        </div>
+    </div>
+    <hr>
+</app-layout>
